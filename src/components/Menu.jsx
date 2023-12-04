@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <nav class="nav-menu">
       <div class="left-menu">
-        <Link to=".">
+        <Link to="." className="logo-home-btn">
           <img src={logo} alt="logo" />
         </Link>
         <NavLink
@@ -43,10 +43,10 @@ const Menu = () => {
           }
           to="cart"
         >
-          <span className="icon-cart">
+          <span className="menu-icon">
             <img src={icon_cart} alt="cart" />
           </span>
-          <span className="menu-cart">Корзина</span>
+          <span className="text-right-btn">Корзина</span>
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -54,10 +54,10 @@ const Menu = () => {
           }
           to="registration"
         >
-          <span className="icon-lk">
+          <span className="menu-icon">
             <img src={icon_lk} alt="auth" />
           </span>
-          <span className="menu-lk">Войти</span>
+          <span className="text-right-btn">Войти</span>
         </NavLink>
       </div>
     </nav>

@@ -1,7 +1,7 @@
 import "./Builds.scss";
 
 const Builds = () => {
-  return <div className="main-container"></div>;
+  return <div></div>;
 };
 
 export default Builds;

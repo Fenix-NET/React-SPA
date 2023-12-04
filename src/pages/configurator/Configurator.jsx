@@ -1,7 +1,7 @@
 import "./Configurator.scss";
 
 const Configurator = () => {
-  return <div className="main-container"></div>;
+  return <div></div>;
 };
 
 export default Configurator;

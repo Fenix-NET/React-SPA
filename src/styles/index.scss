@@ -3,10 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-y: scroll;
+}
+body,
+html {
+  height: 100%;
+}
 body {
   height: 100%;
-  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif, "IBM Plex Mono",
+    monospace, "Jura", sans-serif;
+  text-align: center;
+}
+h1 {
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 a {
   text-decoration: none;
@@ -15,5 +26,5 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #181818;
+  background-color: #1a1a1a;
 }

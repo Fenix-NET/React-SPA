@@ -1,7 +1,7 @@
 import "./Accaunt.scss";
 
 const Accaunt = () => {
-  return <div className="main-container"></div>;
+  return <div></div>;
 };
 
 export default Accaunt;
