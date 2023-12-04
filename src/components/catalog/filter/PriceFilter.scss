@@ -1,0 +1,26 @@
+.price-filter-container {
+}
+.filter-price-range {
+  margin: 15px 0;
+}
+.input-price-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .filter-price {
+    width: 48%;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+  }
+}
+.range-slider {
+  position: relative;
+  .range-selected {
+    border-radius: 3px;
+    height: 5px;
+    position: absolute;
+  }
+}

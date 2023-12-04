@@ -1,0 +1,11 @@
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  .filter-header {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}

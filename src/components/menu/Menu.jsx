@@ -1,8 +1,9 @@
 import { NavLink, Link } from "react-router-dom";
 import "./Menu.scss";
-import logo from "../assets/images/logo-ver2-edit.png";
-import icon_cart from "../assets/icons/icon-cart1.png";
-import icon_lk from "../assets/icons/icon-lk1.png";
+import logo from "../../assets/images/logo-ver2-edit.png";
+import icon_cart from "../../assets/icons/icon-cart1.png";
+import icon_lk from "../../assets/icons/icon-lk1.png";
+import CatalogDropDown from "./CatalogDropDown";
 
 const Menu = () => {
   return (
