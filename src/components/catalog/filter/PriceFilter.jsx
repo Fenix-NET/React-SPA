@@ -5,7 +5,7 @@ import { Range, getTrackBackground } from "react-range";
 
 const PriceFilter = () => {
   const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(100);
+  const [maxPrice, setMaxPrice] = useState(1000);
   const minAllowedPrice = 0;
   const maxAllowedPrice = 1000;
 
@@ -66,33 +66,20 @@ const PriceFilter = () => {
         onChange={handleRangeChange}
         renderTrack={({ props, children }) => (
           <div
-            {...props}
+            ref={props.ref}
             style={{
-              ...props.style,
-              height: "6px",
+              height: "5px",
               width: "100%",
-              background: "#ccc",
-              borderRadius: "3px",
+              borderRadius: "4px",
+              background: getTrackBackground({
+                values: [minPrice, maxPrice],
+                colors: ["#5E5E5E", "#ccc", "#5E5E5E"],
+                min: minAllowedPrice,
+                max: maxAllowedPrice,
+              }),
             }}
           >
-            <div
-              ref={props.ref}
-              style={{
-                height: "5px",
-                width: "100%",
-                borderRadius: "4px",
-                background: getTrackBackground({
-                  values,
-                  colors: ["#ccc", "#548BF4", "#ccc"],
-                  min: { minAllowedPrice },
-                  max: { maxAllowedPrice },
-                  rtl,
-                }),
-                alignSelf: "center",
-              }}
-            >
-              {children}
-            </div>
+            {children}
           </div>
         )}
         renderThumb={({ props }) => (
@@ -103,7 +90,8 @@ const PriceFilter = () => {
               height: "20px",
               width: "20px",
               borderRadius: "50%",
-              backgroundColor: "#007bff",
+              border: "1px solid #5E5E5E",
+              backgroundColor: "#212121",
             }}
           />
         )}

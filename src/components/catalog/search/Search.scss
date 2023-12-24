@@ -12,8 +12,9 @@
       width: 100%;
       padding: 5px;
       display: flex;
-      border-radius: 7px;
-      box-shadow: 0 0 3px 3px #1e1e1e inset;
+      border-radius: 10px;
+      // border: 1px solid #505050;
+      // box-shadow: 0 0 3px 3px #1e1e1e inset;
       background-color: rgb(32, 32, 32);
     }
   }
@@ -29,7 +30,7 @@
   &:focus,
   :active {
     outline: 0;
-    background-color: transparent;
+    // background-color: transparent;
   }
 }
 

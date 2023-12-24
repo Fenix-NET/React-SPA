@@ -1,4 +1,14 @@
 .price-filter-container {
+  padding: 20px;
+  border-bottom: 3px solid #1b1b1b;
+  .name-type-filter {
+    font-family: "Overpass", sans-serif;
+    text-align: start;
+    font-size: 1.4rem;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 5px;
+  }
 }
 .filter-price-range {
   margin: 15px 0;
@@ -7,13 +17,16 @@
   display: flex;
   max-width: 100%;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   .filter-price {
     width: 48%;
-    height: 30px;
+    height: 35px;
     border: none;
     border-radius: 7px;
     padding: 10px;
+    background-color: rgb(35, 35, 35);
+    border: 1px solid #ccc;
+    color: white;
   }
 }
 .range-slider {

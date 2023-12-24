@@ -1,13 +1,13 @@
 .nav-menu {
   border-radius: 25px;
-  background-color: rgb(32 32 32);
+  background-color: rgb(22 22 22);
   padding: 0 20px;
   height: 70px;
   display: flex;
   justify-content: space-between;
   font-family: "Overpass", sans-serif;
   font-weight: 300;
-  box-shadow: rgb(20 20 20) 0px 0px 8px 5px,
+  box-shadow: rgb(19 19 19) 0px 0px 5px 5px,
     rgb(40, 40, 40) 0px 0px 20px 5px inset;
   .left-menu {
     display: flex;
@@ -16,23 +16,20 @@
       margin-right: 10px;
     }
     img {
-      width: 170px;
+      width: 150px;
       &:hover {
         filter: drop-shadow(0 0 10px #9c9c9c);
       }
     }
     .left-menu-btn {
-      margin-left: 25px;
+      margin-left: 30px;
       border-bottom: 2px solid transparent;
       padding: 10px 5px;
       color: #ffffff;
-      font-size: 17px;
+      font-size: 16px;
       &:hover {
         border-bottom-color: aqua;
       }
-    }
-    img {
-      width: 200px;
     }
   }
 }
@@ -63,11 +60,11 @@
   margin-top: 5px;
 }
 .activeLink-left {
-  margin-left: 25px;
+  margin-left: 30px;
   border-bottom: 2px solid aqua;
   padding: 10px 5px;
   color: #ffffff;
-  font-size: 17px;
+  // font-size: 17px;
 }
 .activeLink-right {
   color: aqua;
