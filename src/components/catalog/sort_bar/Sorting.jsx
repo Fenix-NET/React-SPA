@@ -20,11 +20,11 @@ import { useState } from "react";
 import "./Sorting.scss";
 
 const Sorting = ({ handleSortChange }) => {
-  const [selectedOption, setSelectedOption] = useState("default");
+  const [selectedSort, setSelectedSort] = useState("default");
 
-  const handleSelectionChange = (event) => {
+  const handleSelectChange = (event) => {
     const selectedValue = event.target.value;
-    setSelectedOption(selectedValue);
+    setSelectedSort(selectedValue);
     handleSortChange(selectedValue);
   };
 
@@ -32,7 +32,7 @@ const Sorting = ({ handleSortChange }) => {
     <div className="sort-container">
       <span>Сортировка: </span>
       <span className="sort-select">
-        <select value={selectedOption} onChange={handleSelectionChange}>
+        <select value={selectedSort} onChange={handleSelectChange}>
           <option value="default">По умолчанию</option>
           <option value="price">Сначала недорогие</option>
           <option value="coconut">Сначала дорогие</option>
